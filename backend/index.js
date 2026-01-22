@@ -54,6 +54,11 @@ app.get("/api/joke", (req, res) => {
   res.json({ joke: pick });
 });
 
+// GET /api/smashes -> returns current counter
+app.get("/api/smashes", (req, res) => {
+  res.json({ smashes });
+});
+
 // GET /api/vibe?mood=happy|tired|stressed
 app.get("/api/vibe", (req, res) => {
   const mood = (req.query.mood || "").toLowerCase();
