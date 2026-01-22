@@ -76,11 +76,6 @@ app.post("/api/smash", (req, res) => {
   res.json({ smashes });
 });
 
-// GET /api/smashes -> returns current counter
-app.get("/api/smashes", (req, res) => {
-  res.json({ smashes });
-});
-
 // GET /api/secret?code=411L -> hidden message if code is correct
 app.get("/api/secret", (req, res) => {
   const code = req.query.code;
