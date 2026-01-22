@@ -1,4 +1,4 @@
-Welcome to VibeCHeck API
+Welcome to VibeCheck API
 
 A full-stack web application using Node.JS Express backend and a modern frontend interface. This project allows users to check their "vibes". get random fortunes/jokes, and track a global "smash" counter.
 
