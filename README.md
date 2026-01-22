@@ -31,7 +31,6 @@ Ensure you have **Node.js** installed on your system before proceeding.
    3. Navigate to the frontend folder and open index.html in any web browser.
   
 🛠 API Endpoint Reference
-Endpoint,Method,Description
 /api/fortune
 /api/joke
 /api/vibe
