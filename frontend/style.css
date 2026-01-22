@@ -1,0 +1,90 @@
+/* Custom properties for easy color changes */
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --danger: #f43f5e;
+  --success: #10b981;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+p {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* Button Container */
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Base Button Styling */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid #334155;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #334155;
+}
+
+/* Specific Button Colors */
+#btnFortune { border-color: #a855f7; color: #d8b4fe; }
+#btnJoke { border-color: #eab308; color: #fde047; }
+#btnSmash { background-color: var(--danger); color: white; border: none; }
+#btnSmash:hover { background-color: #e11d48; }
+#btnSecret { border-color: var(--text-secondary); opacity: 0.6; }
+
+/* Output Area */
+h2 {
+  border-bottom: 2px solid var(--card-bg);
+  padding-bottom: 10px;
+  margin-top: 2rem;
+}
+
+#out {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #bae6fd;
+  min-height: 50px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
